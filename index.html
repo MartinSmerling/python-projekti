@@ -1,1 +1,45 @@
-python server.py
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8" />
+    <title>Ota yhteyttä</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            const form = event.target;
+            const formData = new FormData(form);
+
+            fetch("/send", {
+                method: "POST",
+                body: new URLSearchParams(formData) // Tämä on tärkeä muutos!
+            })
+            .then(response => {
+                if (response.ok) {
+                    window.location.href = "second.html";
+                } else {
+                    alert("Viestin lähetys epäonnistui.");
+                }
+            })
+            .catch(error => {
+                alert("Tapahtui virhe: " + error);
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Ota yhteyttä</h1>
+        <form onsubmit="handleSubmit(event)">
+            <label for="email">Sähköposti:</label><br>
+            <input type="email" name="email" id="email" required><br><br>
+
+            <label for="message">Viesti:</label><br>
+            <textarea name="message" id="message" rows="5" cols="40" required></textarea><br><br>
+
+            <input type="submit" value="Lähetä">
+        </form>
+    </div>
+</body>
+</html>
