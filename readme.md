@@ -9,4 +9,6 @@ Yhdistin HTML lomakkeen sähköpostin lähetykseen Pythonilla.
 Tämän jälkeen tein tyylikkäämmän sivun lisäämällä HTML:ään CSS tyylitiedoston. 
 
 Sen jälkeen loin kiitosviestin second.html tiedostoon, kun halusin näyttää sen lomakkeen lähettämisen jälkeen.
-Power Point toimintalogiikka -> https://laureauas-my.sharepoint.com/:p:/r/personal/mas00255_laurea_fi/Documents/Python%20projekti%20-%20S%C3%A4hk%C3%B6postiviesti.pptx?d=w60d21665697a46f8aae70b5f26df856c&csf=1&web=1&e=1nFZoH 
+Power Point toimintalogiikka -> https://laureauas-my.sharepoint.com/:p:/r/personal/mas00255_laurea_fi/Documents/Python%20projekti%20-%20S%C3%A4hk%C3%B6postiviesti.pptx?d=w60d21665697a46f8aae70b5f26df856c&csf=1&web=1&e=1nFZoH
+Ruututallenne: <video controls src="Python projekti.mp4" title="Title"></video>
+Youtube video linkki tallenteeseen: https://youtu.be/p7_jJWvmBAo 

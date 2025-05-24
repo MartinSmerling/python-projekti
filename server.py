@@ -4,7 +4,7 @@ import smtplib
 from email.message import EmailMessage
 import os
 
-PORT = 8091
+PORT = 8095
 
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
